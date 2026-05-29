@@ -1,0 +1,168 @@
+---
+title: "**ATIVIDADE AVALIATIVA 9**"
+subtitle: ""
+author: "Pedro Truppel <br> Igor Augusto" 
+date: "06/01/2026"
+date-format: "DD/MM/YYYY"
+institute: "Universidade Federal Fluminense"
+format:
+  revealjs:
+    css: cssprojeto.css
+    theme: sky
+    slide-number: true
+    incremental: false
+    transition: slide
+    background-transition: fade
+    width: 1280
+    height: 720
+    margin: 0.07
+    auto-stretch: false
+    title-slide-attributes:
+      data-background-image: "capa.jpeg"
+      data-background-size: "cover"
+---
+
+
+::: {style="width: 100%; text-align: center; margin-top: 200px;"}
+
+<h2 style="font-size: 110px; margin: 0;">
+INTRODUÇÃO
+
+</h2>
+
+:::
+---
+
+<h2 style="font-size: 60px; margin: 0;"> 
+
+PROPRIEDADES DAS FUNÇÕES
+
+</h2>  
+
+<div style="margin-top: 140px; display: flex; justify-content: center;">
+| Aspecto | read_municipal_seat() | read_intermediate_region() |
+|---|---|---|
+| Geometria | POINT | MULTIPOLYGON |
+| Representa | Sedes municipais | Regiões intermediárias |
+| Escala | Municipal | Regional/intermediária |
+| Objetivo | Localizar cidades | Representar áreas de influência |
+</div>
+
+---
+
+::: {style="width: 100%; text-align: center; margin-top: 200px;"}
+
+<h2 style="font-size: 110px; margin: 0;">
+
+EXPLORAÇÃO DA FUNÇÃO
+
+</h2>
+
+:::
+
+---
+
+<h2 style="font-size: 60px; margin: 0;"> 
+
+ESPECIFICAÇÕES (read_municiple_seat())
+
+</h2>
+
+<div style="margin-top: 140px; display: flex;">
+
+- Entre os principais argumentos, temos: year,code_muni,output.
+- No argumento year temos os anos: de 1872 à 2022.
+- A função retorna geometrias do tipo POINT.
+</div>
+
+---
+
+<h2 style="font-size: 60px; margin: 0;"> 
+
+ESPECIFICAÇÕES (read_municiple_seat())
+
+</h2>
+
+<div style="margin-top: 140px; display: flex;">
+
+- O objeto retornado pertence a classe sf, contendo atributos em formato tabular, coluna geometrica e coordenadas espaciais das sedes municipais
+- Entre as principais colunas estão as que indicam código e nome do município, sigla  e nome do estado, coordenadas espaciais e geometria do ponto.
+
+</div>
+---
+
+<h2 style="font-size: 60px; margin: 0;"> 
+
+ESPECIFICAÇÕES (read_intermediate_region())
+
+</h2>
+
+<div style="margin-top: 140px; display: flex;">
+
+- Entre os principais argumentos, temos: year,
+code_intermediate, output.
+- No argumento year temos os anos: de 2019 à 2025.
+- A função retorna geometrias do tipo MULTIPOLYGON.
+</div>
+---
+<h2 style="font-size: 60px; margin: 0;"> 
+
+ESPECIFICAÇÕES (read_intermediate_region())
+
+</h2>
+
+<div style="margin-top: 140px; display: flex;">
+
+- O objeto retornado pertence a classe sf, contendo tabela de atributos, coluna geometrica e limites espaciais das regiões intermediárias
+- As principais informações incluem código e nome da região intermediária, código da unidade federativa, nome e sigla do estado e geometria espacial das regiões.
+</div>
+---
+
+::: {style="width: 100%; text-align: center; margin-top: 200px;"}
+
+<h2 style="font-size: 110px; margin: 0;">
+
+MAPAS
+
+</h2>
+
+:::
+---
+
+![](image.jpeg){fig-align="center" width=75%}
+---
+
+![](image1.jpeg){fig-align="center" width=75%}
+---
+
+![](image2.jpeg){fig-align="center" width=70%}
+---
+
+::: {style="width: 100%; text-align: center; margin-top: 200px;"}
+
+<h2 style="font-size: 110px; margin: 0;">
+
+CONCLUSÃO
+
+</h2>
+:::
+---
+<div style="margin-top: 140px; display: flex;">
+
+- As funções do geobr permitem visualizar diferentes tipos de geometrias espaciais;
+- read_municipal_seat() representa localizações por pontos;
+- read_intermediate_region() representa áreas regionais por polígonos;
+- A sobreposição das camadas facilita a interpretação espacial e territorial.
+
+</div>
+
+---
+
+::: {style="width: 100%; text-align: center; margin-top: 200px;"}
+
+<h2 style="font-size: 110px; margin: 0;">
+
+FIM
+
+</h2>
+:::
